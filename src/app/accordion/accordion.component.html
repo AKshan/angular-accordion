@@ -1,0 +1,25 @@
+<section class="accordion-container">
+  <h1>Have a question? We can help</h1>
+  <ng-container *ngFor="let faqdata of faqData; let i = index">
+
+    <header class="heading" (click)="showDesc('accDesc_'+i)" [class.active]="accordion_desc == 'accDesc_'+i">
+      <div class="heading-title">
+        <h4>Q{{i+1}}</h4>
+        <span>{{faqdata.question}}</span>
+      </div>
+      <a>
+        <svg class="svg-rotate__icon" width="20px" height="30px" viewBox="0 0 357 357">
+          <g id="add">
+            <path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+          </g>
+        </svg>
+      </a>
+    </header>
+    <ng-container *ngIf="accordion_desc == 'accDesc_'+i">
+      <div></div>
+      <p @slideWithFade>{{faqdata.answer}}</p>
+    </ng-container>
+  </ng-container>
+</section>
+
+
