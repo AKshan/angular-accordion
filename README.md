@@ -1,4 +1,8 @@
+
+
 # AngularAccordion
+
+To Download ZIP. Click on this link https://github.com/AKshan/angular-accordion/blob/master/UI_Engineer_Task_angular-accordion.zip
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
